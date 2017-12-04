@@ -1,4 +1,5 @@
-# electron-ad-block
+# electron-ad-block [![npm package](https://img.shields.io/npm/v/electron-ad-block.svg)](https://www.npmjs.org/package/electron-ad-block) [![Travis Build Status](https://travis-ci.org/webcatalog/electron-ad-block.svg?branch=master)](https://travis-ci.org/webcatalog/electron-ad-block)
+
 Simple ad blocker for Electron.
 
 ### How It Works

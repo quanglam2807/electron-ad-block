@@ -8,7 +8,7 @@ const defaultOptions = {
   verbose: true,
 };
 
-export const blockAds = (session, userOptions = {}) => {
+const blockAds = (session, userOptions = {}) => {
   const options = Object.assign({}, defaultOptions, userOptions);
   session.webRequest.onBeforeRequest(['*://*./*'], (details, callback) => {
     isAdAsync(options.filterTypes, details.url)
@@ -25,6 +25,7 @@ export const blockAds = (session, userOptions = {}) => {
   });
 };
 
-export default {
+module.exports = {
   blockAds,
+  isAdAsync,
 };

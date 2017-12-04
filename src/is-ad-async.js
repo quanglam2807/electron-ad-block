@@ -15,7 +15,8 @@ const arraysIdentical = (a1, a2) =>
 
 let initializedFilterTypes = null;
 const initializeAsync = (filterTypes) => {
-  if (arraysIdentical(initializedFilterTypes, filterTypes)) return Promise.resolve();
+  if (Array.isArray(initializedFilterTypes)
+    && arraysIdentical(initializedFilterTypes, filterTypes)) return Promise.resolve();
 
   const supportedFilterTypes = Object.keys(filterSources);
 

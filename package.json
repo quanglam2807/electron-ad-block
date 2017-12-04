@@ -1,0 +1,25 @@
+{
+  "name": "electron-ad-block",
+  "version": "0.1.0",
+  "description": "Simple ad blocker for Electron.",
+  "main": "src/index.js",
+  "repository": "https://github.com/webcatalog/electron-ad-block.git",
+  "author": "Quang Lam <quang.lam2807@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "ad-block": "^3.1.10",
+    "download": "^6.2.5",
+    "fs-extra": "^4.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.1.0"
+  },
+  "peerDependencies": {
+    "electron": "1.7.x"
+  }
+}

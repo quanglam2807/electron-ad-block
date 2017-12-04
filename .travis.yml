@@ -12,3 +12,12 @@ script:
 - yarn lint
 - yarn build
 - yarn test
+deploy:
+  - provider: npm
+    email: quang.lam2807@gmail.com
+    api_key:
+      secure: "wWbLH0+GCXTcnyIA/9KmFrStFGPiC0uFNaHw23J1AObH5wUo3P7gQAGR8pikSPo/tMQJy8KVtXcWh2G8TCYxVu9t+7Mm44iz4CmYm0CBwVVPArQg9D/yLkfVNYyBURqYMyx2XaqxCv+ODxBy1GkfmCQjpLj0QNz0Hh4y6e7+oOzp7uO939L/aXB3hdsapDHkc8cuHCGQbroN4wiDRffmrW7VXxly7cDKE97Xfvm3STyaTmULo5dQdQyzuLNP3LfvihDlKe/MGULdkfQuZInK75QQ+iP+0lte8Q0Yhplyfo9pBotkbSiP/xZwsYmUigY78ELk1dpNdnxuJD4KkYDnYLkiPAYqE7PULX617AaqOl5QIPwjPLsXtBNkZDuban4rs37aL+RyhS9WK8YC9E2N/uKZY8xun8ZjI/rYbMFwhK5GyBnrRsF6inTVkdRhQGg1NyVvatfA5wAeIULnqqQDPf7yVi8QQ0HQWZDctIqvV7O0h5O7a7RxyW836M/GCB7oh53AyQXEJeGumRoxIngvQjVU1e0gD6Iofahwnvji46S6j7Y7XUzNIDOuIfi10IVmWs6C3/GDWP8iNnbtFWrxbSAO98d6T96Ue4EcQcNNkU+nGxwR5RjGZRhYl745Htnq4rrrwjT82fuWTB5APFMqWOm3mtv1TlyjT0XvhWIAywQ="
+    skip_cleanup: true
+    on:
+      tags: true
+      repo: webcatalog/electron-ad-block

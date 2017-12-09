@@ -1,6 +1,6 @@
 // https://raw.githubusercontent.com/Jense5/is-ad/master/scripts/build.js
 
-const { AdBlockClient } = require('ad-block/build/Release/ad-block.node');
+const { AdBlockClient } = require('@webcatalog/ad-block/build/Release/ad-block.node');
 const path = require('path');
 const fs = require('fs-extra');
 const download = require('download');

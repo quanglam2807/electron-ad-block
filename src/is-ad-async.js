@@ -3,7 +3,7 @@
 import fs from 'fs-extra';
 import path from 'path';
 
-import { AdBlockClient, FilterOptions } from 'ad-block/build/Release/ad-block.node';
+import { AdBlockClient, FilterOptions } from '@webcatalog/ad-block/build/Release/ad-block.node';
 
 import filterSources from './filter-sources';
 

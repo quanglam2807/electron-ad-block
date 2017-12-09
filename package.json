@@ -14,7 +14,7 @@
     "test": "mocha test"
   },
   "dependencies": {
-    "ad-block": "^3.1.10",
+    "@webcatalog/ad-block": "^3.1.10",
     "download": "^6.2.5",
     "fs-extra": "^4.0.2"
   },

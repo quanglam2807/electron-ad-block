@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@webcatalog/ad-block@^3.1.10":
+  version "3.1.10"
+  resolved "https://registry.yarnpkg.com/@webcatalog/ad-block/-/ad-block-3.1.10.tgz#1be74e07b1ca4667f7e17565772df24c78ff40c5"
+  dependencies:
+    nan "^2.2.1"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -19,15 +25,6 @@ acorn@^3.0.4:
 acorn@^5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.2.1.tgz#317ac7821826c22c702d66189ab8359675f135d7"
-
-ad-block@^3.1.10:
-  version "3.1.10"
-  resolved "https://registry.yarnpkg.com/ad-block/-/ad-block-3.1.10.tgz#3d281ce282e3b7491a275ba681683fd34f31d80a"
-  dependencies:
-    bloom-filter-cpp "^1.1.6"
-    cppunitlite "^1.0.0"
-    hashset-cpp "^1.0.18"
-    nan "^2.2.1"
 
 ajv-keywords@^1.0.0:
   version "1.5.1"
@@ -680,10 +677,6 @@ block-stream@*:
   dependencies:
     inherits "~2.0.0"
 
-bloom-filter-cpp@^1.1.6:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/bloom-filter-cpp/-/bloom-filter-cpp-1.1.6.tgz#ddf0305923adf6edac1bf409e6735e196d2cacbf"
-
 boom@2.x.x:
   version "2.10.1"
   resolved "https://registry.yarnpkg.com/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
@@ -872,10 +865,6 @@ core-js@^2.4.0, core-js@^2.5.0:
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
-
-cppunitlite@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/cppunitlite/-/cppunitlite-1.0.0.tgz#d9b33bd4dbde7de6b09e3534176e046653fabceb"
 
 cryptiles@2.x.x:
   version "2.0.5"
@@ -1676,10 +1665,6 @@ has@^1.0.1:
   resolved "https://registry.yarnpkg.com/has/-/has-1.0.1.tgz#8461733f538b0837c9361e39a9ab9e9704dc2f28"
   dependencies:
     function-bind "^1.0.2"
-
-hashset-cpp@^1.0.18:
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/hashset-cpp/-/hashset-cpp-1.0.18.tgz#68d4fbf035f04909f68061fc51546a025ab314f4"
 
 hawk@3.1.3, hawk@~3.1.3:
   version "3.1.3"

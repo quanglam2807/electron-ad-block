@@ -1,6 +1,6 @@
 // Modified from https://raw.githubusercontent.com/Jense5/is-ad/master/src/index.js
 
-import fs from 'fs-extra';
+import fs from 'fs';
 import path from 'path';
 
 import { AdBlockClient, FilterOptions } from '@webcatalog/ad-block/build/Release/ad-block.node';
@@ -22,16 +22,23 @@ const initializeAsync = (filterTypes) => {
 
   client = new AdBlockClient();
 
-  const p = filterTypes.map((filterType) => {
-    if (!supportedFilterTypes.includes(filterType)) return null;
+  const p = filterTypes.map(filterType =>
+    new Promise((resolve, reject) => {
+      try {
+        if (supportedFilterTypes.includes(filterType)) {
+          const bufferPath = path.resolve(__dirname, '..', 'dist', `${filterType}.buffer`);
 
-    const bufferPath = path.resolve(__dirname, '..', 'dist', `${filterType}.buffer`);
-    return fs.readFile(bufferPath)
-      .then((buffer) => {
-        client.deserialize(buffer);
-        initializedFilterTypes = filterTypes;
-      });
-  });
+          const buffer = fs.readFileSync(bufferPath);
+          client.deserialize(buffer);
+          initializedFilterTypes = filterTypes;
+        }
+
+        resolve();
+      } catch (err) {
+        reject(err);
+      }
+    }),
+  );
 
   return Promise.all(p);
 };

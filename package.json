@@ -15,8 +15,7 @@
   },
   "dependencies": {
     "@webcatalog/ad-block": "^3.1.10",
-    "download": "^6.2.5",
-    "fs-extra": "^4.0.2"
+    "download": "^6.2.5"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

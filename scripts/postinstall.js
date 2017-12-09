@@ -2,7 +2,7 @@
 
 const { AdBlockClient } = require('@webcatalog/ad-block/build/Release/ad-block.node');
 const path = require('path');
-const fs = require('fs-extra');
+const fs = require('fs');
 const download = require('download');
 
 const filterSources = {
@@ -28,8 +28,11 @@ const p = Object.keys(filterSources).map((key) => {
       const distPath = path.resolve(__dirname, '..', 'dist');
       const output = path.resolve(distPath, `${key}.buffer`);
 
-      return fs.ensureDir(distPath)
-        .then(() => fs.writeFile(output, buffer));
+      if (!fs.existsSync(distPath)) {
+        fs.mkdirSync(distPath);
+      }
+
+      fs.writeFileSync(output, buffer);
     });
 });
 

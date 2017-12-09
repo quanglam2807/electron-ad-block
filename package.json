@@ -1,6 +1,6 @@
 {
   "name": "electron-ad-block",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Simple ad blocker for Electron.",
   "main": "lib/index.js",
   "repository": "https://github.com/webcatalog/electron-ad-block.git",
